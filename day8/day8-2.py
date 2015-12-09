@@ -8,10 +8,12 @@ with open("day8.input") as f:
     for line in f:
         line = line.replace('\n', '')
         len_read += len(line)
-        # replace " with |" in the string
-        line = re.sub(r'"', '|"', line)
-        # replace \ with || in the string
-        line = re.sub(r'\\', '||', line)
+
+        # replace \ with \\ in the string
+        line = re.sub(r'\\', r'\\\\', line)
+        # replace " with \" in the string
+        line = re.sub(r'"', r'\\"', line)
+
         # coun the surrounding brackets
         len_code += len(line) + 2
 
