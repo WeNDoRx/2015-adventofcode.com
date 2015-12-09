@@ -4,7 +4,7 @@ len_code = 0
 len_in_mem = 0
 
 # read input
-with open("day8.input") as f:
+with open("day08.input") as f:
     for line in f:
         line = line.replace('\n', '')
 

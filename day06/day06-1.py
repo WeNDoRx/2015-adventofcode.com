@@ -2,7 +2,7 @@ import numpy
 
 r = numpy.zeros(shape=(1000 ,1000))
 
-with open("day6.input") as f:
+with open("day06.input") as f:
     for line in f:
         split = line.replace('\n', '').split(" ")
         offset = 0

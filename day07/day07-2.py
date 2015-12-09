@@ -19,7 +19,7 @@ circ = {}
 
 def read_circuit():
 # read input
-    with open("day7.input") as f:
+    with open("day07.input") as f:
         for line in f:
             line = line.replace('\n', '').split(" ")
             

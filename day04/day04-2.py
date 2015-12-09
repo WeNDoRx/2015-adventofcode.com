@@ -1,6 +1,6 @@
 import md5
 
-with open('day4.input', 'r') as f:
+with open('day04.input', 'r') as f:
     my_hash = f.readline().rstrip("\n")
 
 i = 0

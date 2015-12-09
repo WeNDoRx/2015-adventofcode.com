@@ -1,4 +1,4 @@
-f = open('day1.input')
+f = open('day01.input')
 line = f.readline()
 i = 0
 for x in xrange(0, len(line)):

@@ -31,7 +31,7 @@ def bruteforce():
 		max_yet = max(max_yet, length)
 	print max_yet
 
-with open("day9.input") as f:
+with open("day09.input") as f:
     for line in f:
         line = line.replace('\n', '')
 

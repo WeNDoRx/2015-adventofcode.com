@@ -1,6 +1,6 @@
 import numpy
 
-with open ("day3.input", "r") as myfile:
+with open ("day03.input", "r") as myfile:
     data=myfile.read().replace('\n', '')
 
 r = numpy.zeros(shape=(20000 ,20000))
