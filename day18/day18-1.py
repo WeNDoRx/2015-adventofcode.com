@@ -1,26 +1,13 @@
-from pprint import pprint
-import copy
-
 lights = []
 
 def count_neighbours(x, y):
 	on = 0
-	if lights[x+1][y] == '#':
-		on += 1
-	if lights[x][y+1] == '#':
-		on += 1
-	if lights[x-1][y] == '#':
-		on += 1
-	if lights[x][y-1] == '#':
-		on += 1
-	if lights[x+1][y+1] == '#':
-		on += 1
-	if lights[x-1][y-1] == '#':
-		on += 1
-	if lights[x-1][y+1] == '#':
-		on += 1
-	if lights[x+1][y-1] == '#':
-		on += 1
+	for x_t in xrange(x - 1, x + 2):
+		for y_t in xrange(y - 1, y + 2):
+			if lights[x_t][y_t] == '#':
+				on += 1
+	if lights[x][y] == '#':
+		on += -1
 	return on
 
 def update():
